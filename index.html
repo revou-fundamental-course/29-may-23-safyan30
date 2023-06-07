@@ -12,7 +12,6 @@
             display: flex;
             justify-content: space-between;
         }
-
         ul.navbar {
             list-style-type: none;
             margin: 0;
@@ -24,14 +23,11 @@
             justify-content: space-evenly;
             gap: 10px
         }
-
         ul.navbar li {
             float: right;
         }
-
         div.nav li.logo img {
             max-height: 35pt;
-            
         }
         ul.navbar li a {
             display: block;
@@ -59,9 +55,39 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         ul.navbar li a:hover {
             background-color: #ebeaae;
+        }
+                /* CSS untuk 3 lingkaran */
+                .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .circle img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .text {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
         }
     </style>
     <meta charset='utf-8'>
@@ -88,9 +114,22 @@
         </div>
     </header>
     <footer>
-        <div class="btengah">
-            <h1>Our Headquarter</h1>
-            
+            <div class="btengah">
+                <h1>Our Headquarter</h1>
+            </div>
+        <div class="container">
+            <div class="circle">
+                <img src="https://assets-global.website-files.com/61af164800e38cf1b6c60b55/6461beffd5f7cf7006adbdc7_1616042152681.jpeg" alt="Gambar">
+            </div>
+            <div class="text">
+                Aris Budiono
+            </div>
+            <div class="circle">
+                <img src="https://assets-global.website-files.com/61af164800e38cf1b6c60b55/6461bf39bf7e8d2d41b11be2_1560255232381.jpeg" alt="Gambar">
+            </div>
+            <div class="text">
+                Michel
+            </div>
         </div>
     </footer>
 </body>
