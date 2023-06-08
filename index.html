@@ -58,19 +58,18 @@
         ul.navbar li a:hover {
             background-color: #ebeaae;
         }
-                /* CSS untuk 3 lingkaran */
+        /* CSS untuk 3 lingkaran */
                 .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            flex-direction: row;
+            align-items:first baseline;
+            justify-content: space-around;
             text-align: center;
             height: 100vh;
         }
-
         .circle {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             background-color: #f1f1f1;
             overflow: hidden;
@@ -78,16 +77,24 @@
             align-items: center;
             justify-content: center;
         }
-        
         .circle img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 150%;
+            max-height: 150%;
         }
-
         .text {
             margin-top: 10px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align:justify;
+            font-size: 25px;
+        }
+        .item {
+            justify-content: center;
+        }
+        .form{
+            
         }
     </style>
     <meta charset='utf-8'>
@@ -118,18 +125,41 @@
                 <h1>Our Headquarter</h1>
             </div>
         <div class="container">
-            <div class="circle">
-                <img src="https://assets-global.website-files.com/61af164800e38cf1b6c60b55/6461beffd5f7cf7006adbdc7_1616042152681.jpeg" alt="Gambar">
+            <div class="item">
+                <div class="circle">
+                    <img src="https://i.pinimg.com/originals/55/70/b9/5570b9253d6b58a5aec129d8074fdbe0.jpg" alt="Gambar">
+                </div>
+                <div class="text">
+                    Malang
+                </div>
             </div>
-            <div class="text">
-                Aris Budiono
+            <div class="item">
+                <div class="circle">
+                    <img src="https://i.pinimg.com/236x/20/c9/d6/20c9d6c3149f156a2ed07b8a86455a70.jpg" alt="Gambar">
+                </div>
+                <div class="text">
+                    Bali
+                </div>
             </div>
-            <div class="circle">
-                <img src="https://assets-global.website-files.com/61af164800e38cf1b6c60b55/6461bf39bf7e8d2d41b11be2_1560255232381.jpeg" alt="Gambar">
+            <div class="item">
+                <div class="circle">
+                    <img src="https://i.pinimg.com/236x/7b/11/81/7b1181fe7eb73ffa639e7c88b098185e.jpg" alt="Gambar">
+                </div>
+                <div class="text">
+                    Yogyakarta
+                </div>
             </div>
-            <div class="text">
-                Michel
+            <div class="item">
+                <div class="circle">
+                    <img src="https://i.pinimg.com/originals/be/0b/82/be0b82b580c3c32c5bea6c7de6b3b7d0.jpg" alt="Gambar">
+                </div>
+                <div class="text">
+                    Semarang
+                </div>
             </div>
+        </div>
+        <div class="form">
+
         </div>
     </footer>
 </body>
