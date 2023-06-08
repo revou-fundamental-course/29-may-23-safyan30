@@ -93,8 +93,17 @@
         .item {
             justify-content: center;
         }
-        .form{
-            
+        .contact-container {
+            display: flex;
+            justify-content:center;
+        }
+        .contact-form {
+        width: 50%;
+        }
+        .contact-output {
+        width: 45%;
+        border: 1px solid #ccc;
+        padding: 10px;
         }
     </style>
     <meta charset='utf-8'>
@@ -108,7 +117,7 @@
     <div class="nav">
             <li class="logo"> <a href="https://www.google.com/"> <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg"></a></li>
         <ul class="navbar">
-            <li><a href="https://github.com/revou-fundamental-course/29-may-23-safyan30/blob/main/index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#about">About</a></li>
@@ -158,8 +167,35 @@
                 </div>
             </div>
         </div>
-        <div class="form">
-
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-form">
+            <form>
+              <label for="name">Nama:</label><br>
+              <input type="text" id="name" name="name"><br><br>
+      
+              <label for="birthdate">Tanggal Lahir:</label><br>
+              <input type="date" id="birthdate" name="birthdate"><br><br>
+      
+              <label>Jenis Kelamin:</label><br>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Laki-laki</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Perempuan</label><br><br>
+      
+              <label for="message">Pesan:</label><br>
+              <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      
+              <input type="submit" value="Kirim">
+            </form>
+          </div>
+          <div class="contact-output">
+            <h3>Output Print:</h3>
+            <p id="output-name"></p>
+            <p id="output-birthdate"></p>
+            <p id="output-gender"></p>
+            <p id="output-message"></p>
+          </div>
         </div>
     </footer>
 </body>
